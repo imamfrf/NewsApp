@@ -8,7 +8,7 @@ buildscript {
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.2'
+        classpath 'com.android.tools.build:gradle:3.6.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -26,4 +26,17 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    // App dependencies
+    androidXAnnotations = '1.0.1'
+    androidXLegacySupport = '1.0.0'
+    materialVersion = '1.1.0'
+    cardVersion = '1.0.0'
+    recyclerViewVersion = '1.1.0'
+    archLifecycleVersion = '2.2.0'
+    roomVersion = '2.2.5'
+    koinVersion= '2.1.5'
+    glideVersion = '4.9.0'
 }
